@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../libs/libonyx_wpa.a  CMakeFiles/onyx_wpa.dir/wpa_ctrl.c.o CMakeFiles/onyx_wpa.dir/os_unix.c.o
+/usr/bin/ranlib ../../libs/libonyx_wpa.a

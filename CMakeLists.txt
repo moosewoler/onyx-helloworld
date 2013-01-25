@@ -1,12 +1,11 @@
-# Make sure you already have cmake 2.6 installed. For cross compiling.
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+cmake_minimum_required (VERSION 2.6)
 
 # Additional cmake modules
-SET(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules")
+set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules")
 
 # Project.
-Project(OnyxHelloWorld)
-ENABLE_TESTING()
+project (onyx-helloworld)
+enable_testing()
 
 # Check to use arm toolchain or not
 IF(BUILD_FOR_ARM)
