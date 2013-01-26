@@ -1,2 +1,0 @@
-/home/moose/Code/github/onyx-helloworld/build/arm/src/CMakeFiles/hello_world.oar.dir
-/home/moose/Code/github/onyx-helloworld/build/arm/src/wpa/CMakeFiles/onyx_wpa.dir
