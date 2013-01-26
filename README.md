@@ -11,12 +11,12 @@ This project coulb be used as the start point to learn(try) how to develop a boo
 2. Compilation
 ---------------
 Just run
-	./build.sh
+>	./build.sh
 The script will call cmake to configure the project, and then make to build.
 
 3. Log
 ------
 2013-01-26 
-	. build.sh worked. 
-	. CMakeLists.txt worked. Output directory has been changed.
-	. hello_work.oar worked on device(i62hd).
+*  build.sh worked. 
+*  CMakeLists.txt worked. Output directory has been changed.
+*  hello_work.oar worked on device(i62hd).
