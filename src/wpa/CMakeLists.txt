@@ -1,11 +1,8 @@
+if (WIN32)
+    set(SRC wpa_ctrl.c os_win32.c)
+else (WIN32)
+    set(SRC wpa_ctrl.c os_unix.c)
+endif (WIN32)
 
-
-IF (WIN32)
-    SET(SRC wpa_ctrl.c os_win32.c)
-ELSE (WIN32)
-    SET(SRC wpa_ctrl.c os_unix.c)
-ENDIF (WIN32)
-
-ADD_LIBRARY(onyx_wpa ${SRC})
+add_library(onyx_wpa ${SRC})
 strict_warning(onyx_wpa)
-

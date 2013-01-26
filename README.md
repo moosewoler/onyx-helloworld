@@ -12,6 +12,7 @@ This project coulb be used as the start point to learn(try) how to develop a boo
 ---------------
 Just run
 >	./build.sh
+
 The script will call cmake to configure the project, and then make to build.
 
 3. Log
