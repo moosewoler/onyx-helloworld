@@ -3,9 +3,10 @@ cmake_minimum_required (VERSION 2.6)
 # Additional cmake modules
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules")
 
+
 # Project.
 project (onyx-helloworld)
-enable_testing()
+#enable_testing()
 
 # Check to use arm toolchain or not
 IF(BUILD_FOR_ARM)

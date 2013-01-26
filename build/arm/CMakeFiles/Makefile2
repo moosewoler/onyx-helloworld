@@ -106,11 +106,11 @@ clean: src/wpa/CMakeFiles/onyx_wpa.dir/clean
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/hello_world.dir/all
+src/all: src/CMakeFiles/hello_world.oar.dir/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/hello_world.dir/clean
+src/clean: src/CMakeFiles/hello_world.oar.dir/clean
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -118,38 +118,38 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/hello_world.dir
+# Target rules for target src/CMakeFiles/hello_world.oar.dir
 
 # All Build rule for target.
-src/CMakeFiles/hello_world.dir/all: src/wpa/CMakeFiles/onyx_wpa.dir/all
-	$(MAKE) -f src/CMakeFiles/hello_world.dir/build.make src/CMakeFiles/hello_world.dir/depend
-	$(MAKE) -f src/CMakeFiles/hello_world.dir/build.make src/CMakeFiles/hello_world.dir/build
+src/CMakeFiles/hello_world.oar.dir/all: src/wpa/CMakeFiles/onyx_wpa.dir/all
+	$(MAKE) -f src/CMakeFiles/hello_world.oar.dir/build.make src/CMakeFiles/hello_world.oar.dir/depend
+	$(MAKE) -f src/CMakeFiles/hello_world.oar.dir/build.make src/CMakeFiles/hello_world.oar.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/moose/Code/github/onyx-helloworld/build/arm/CMakeFiles  1
-	@echo "Built target hello_world"
-.PHONY : src/CMakeFiles/hello_world.dir/all
+	@echo "Built target hello_world.oar"
+.PHONY : src/CMakeFiles/hello_world.oar.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/hello_world.dir/all
+all: src/CMakeFiles/hello_world.oar.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/hello_world.dir/rule: cmake_check_build_system
+src/CMakeFiles/hello_world.oar.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moose/Code/github/onyx-helloworld/build/arm/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/hello_world.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/hello_world.oar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moose/Code/github/onyx-helloworld/build/arm/CMakeFiles 0
-.PHONY : src/CMakeFiles/hello_world.dir/rule
+.PHONY : src/CMakeFiles/hello_world.oar.dir/rule
 
 # Convenience name for target.
-hello_world: src/CMakeFiles/hello_world.dir/rule
-.PHONY : hello_world
+hello_world.oar: src/CMakeFiles/hello_world.oar.dir/rule
+.PHONY : hello_world.oar
 
 # clean rule for target.
-src/CMakeFiles/hello_world.dir/clean:
-	$(MAKE) -f src/CMakeFiles/hello_world.dir/build.make src/CMakeFiles/hello_world.dir/clean
-.PHONY : src/CMakeFiles/hello_world.dir/clean
+src/CMakeFiles/hello_world.oar.dir/clean:
+	$(MAKE) -f src/CMakeFiles/hello_world.oar.dir/build.make src/CMakeFiles/hello_world.oar.dir/clean
+.PHONY : src/CMakeFiles/hello_world.oar.dir/clean
 
 # clean rule for target.
-clean: src/CMakeFiles/hello_world.dir/clean
+clean: src/CMakeFiles/hello_world.oar.dir/clean
 .PHONY : clean
 
 #=============================================================================

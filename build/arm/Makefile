@@ -67,16 +67,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moose/Code/github/onyx-helloworld/build/arm/CMakeFiles /home/moose/Code/github/onyx-helloworld/build/arm/CMakeFiles/progress.marks
@@ -122,17 +112,17 @@ onyx_wpa/fast:
 .PHONY : onyx_wpa/fast
 
 #=============================================================================
-# Target rules for targets named hello_world
+# Target rules for targets named hello_world.oar
 
 # Build rule for target.
-hello_world: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello_world
-.PHONY : hello_world
+hello_world.oar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_world.oar
+.PHONY : hello_world.oar
 
 # fast build rule for target.
-hello_world/fast:
-	$(MAKE) -f src/CMakeFiles/hello_world.dir/build.make src/CMakeFiles/hello_world.dir/build
-.PHONY : hello_world/fast
+hello_world.oar/fast:
+	$(MAKE) -f src/CMakeFiles/hello_world.oar.dir/build.make src/CMakeFiles/hello_world.oar.dir/build
+.PHONY : hello_world.oar/fast
 
 # Help Target
 help:
@@ -142,9 +132,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... onyx_wpa"
-	@echo "... hello_world"
+	@echo "... hello_world.oar"
 .PHONY : help
 
 
