@@ -8,7 +8,6 @@ macro       (PRE_CONFIGURE)
     set (LIBRARY_OUTPUT_PATH    ${PROJECT_BINARY_DIR}/libs)
     set (TEST_OUTPUT_PATH       ${PROJECT_BINARY_DIR}/unittests)
     set (QT_PLUGINS_OUTPUT_PATH ${PROJECT_BINARY_DIR}/plugins)
-    set (ONYX_SDK_LIB_MYBUILD   "~/Code/booxsdk-master/build/arm/libs/")
     #enable_testing()
 
     # Check to use arm toolchain or not
@@ -29,5 +28,5 @@ macro       (PRE_CONFIGURE)
     # Project include directories.
     message             (STATUS "QT_LIBRARY_DIR is set to ${QT_LIBRARY_DIR}")
     include_directories (BEFORE ${CMAKE_SOURCE_DIR}/src/include ${CMAKE_FIND_ROOT_PATH}/include)
-    link_directories    (${ONYX_SDK_LIB_MYBUILD} ${QT_LIBRARY_DIR})
+    link_directories    (${QT_LIBRARY_DIR})
 endmacro    (PRE_CONFIGURE)
